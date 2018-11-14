@@ -33,7 +33,7 @@ The connector also implements a navigation table.
 When connecting you will be prompted for the data you want to retrieve. Below are examples for getting population and GDP information:
 
 | Parameter | Example 1 | Example 2
-|
+| --- | --- | ---
 | indicator | SP.POP.TOTL | NY.GDP.MKTP.PP.CD
 | countries | all | chn;bra;ind;rus
 | dateRange | 2017:2017 | 1998:2017
