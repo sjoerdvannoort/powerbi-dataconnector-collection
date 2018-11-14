@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "WorldBankConnector", "WorldBankConnector\WorldBankConnector.mproj", "{6314C7BA-57A3-48BE-B742-5A432DE217BA}"
+EndProject
+Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "DatabricksRunsConnector", "DatabricksRunsConnector\DatabricksRunsConnector.mproj", "{A49C09E3-E71A-4A2B-8557-8A0730030B4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EB6FBE51-8645-4B56-839B-09F776BCCA7B}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom Connectors", "Custom Connectors", "{7F2DE910-1068-490C-AE25-DB9CB4E37744}"
+	ProjectSection(SolutionItems) = preProject
+		Custom Connectors\DatabricksRunsConnector.mez = Custom Connectors\DatabricksRunsConnector.mez
+		Custom Connectors\WorldBankConnector.mez = Custom Connectors\WorldBankConnector.mez
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6314C7BA-57A3-48BE-B742-5A432DE217BA}.Debug|x86.ActiveCfg = Debug|x86
+		{6314C7BA-57A3-48BE-B742-5A432DE217BA}.Debug|x86.Build.0 = Debug|x86
+		{6314C7BA-57A3-48BE-B742-5A432DE217BA}.Release|x86.ActiveCfg = Release|x86
+		{6314C7BA-57A3-48BE-B742-5A432DE217BA}.Release|x86.Build.0 = Release|x86
+		{A49C09E3-E71A-4A2B-8557-8A0730030B4B}.Debug|x86.ActiveCfg = Debug|x86
+		{A49C09E3-E71A-4A2B-8557-8A0730030B4B}.Debug|x86.Build.0 = Debug|x86
+		{A49C09E3-E71A-4A2B-8557-8A0730030B4B}.Release|x86.ActiveCfg = Release|x86
+		{A49C09E3-E71A-4A2B-8557-8A0730030B4B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B982B0A-56F7-48D4-BB29-08AA96D56AE3}
+	EndGlobalSection
+EndGlobal
