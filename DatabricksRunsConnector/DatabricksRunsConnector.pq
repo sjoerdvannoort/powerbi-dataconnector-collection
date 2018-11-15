@@ -68,29 +68,23 @@ DatabricksRunsImpl = (hostUrl as text, serviceName as text, optional maxPages as
 [DataSource.Kind="DatabricksRunsConnector", Publish="DatabricksRunsConnector.Publish"]
 shared DatabricksRunsConnector.Contents = Value.ReplaceType(DatabricksRunsImpl,DatabricksRunsType);
 
-shared DatabricksRunsConnector.TestConnectionImpl = (hostUrl as text) =>
-     let
-        requestHeaders = [
-            #"Content-Type"="application/json",
-            #"Authorization"= "Bearer " & Extension.CurrentCredential() [Key]
-        ],
-        WebContentsOptions = [
-            Headers = requestHeaders
-        ],
-        url = hostUrl & "/api/2.0/jobs/runs/list?completed_only=true&limit=10&offset=0",
-        JsonResult = Json.Document(Web.Contents(url, WebContentsOptions ))
-    in JsonResult;
-
-
+[DataSource.Kind="DatabricksRunsConnector"]
+shared DatabricksRunsConnector.TestConnectionImpl = (hostUrl as text, serviceName as text, optional maxPages as number) as table => 
+    let
+           tstCall = GetDatabricksApiPage(hostUrl,1),
+           okResult = #table({"page"}, {{tstCall[page]}})
+    in
+        okResult;
 
 // Data Source Kind description
 DatabricksRunsConnector = [
     TestConnection = (dataSourcePath) as list => 
         let
             json = Json.Document(dataSourcePath),
-            hostUrl = json[hostUrl]
+            hostUrl = json[hostUrl],
+            serviceName = json[serviceName]
         in
-            { "DatabricksRunsConnector.TestConnectionImpl",hostUrl},
+            { "DatabricksRunsConnector.TestConnectionImpl",hostUrl,serviceName,1},
     Authentication = [
         Key = [
             KeyLabel = "Personal Access Token",
