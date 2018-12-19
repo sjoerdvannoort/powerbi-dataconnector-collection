@@ -42,7 +42,7 @@ GetWorldBankPage = (page as text, query as text, optional queryparms as text) =>
 
 GetWorldBankData = (query as text, optional queryparms as text) => 
     let
-        // call GetWorldBankPage for page 1, returns data pulus meta data containg total number of pages
+        // call GetWorldBankPage for page 1, returns data plus meta data containing total number of pages
         // loop all pages, incrementing page number and calling GetWorldBankPage
         data = List.Generate(
             () => GetWorldBankPage(Number.ToText(1), query, queryparms),
