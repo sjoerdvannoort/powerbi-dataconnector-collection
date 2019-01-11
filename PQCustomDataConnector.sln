@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "WorldBankConnector", "WorldBankConnector\WorldBankConnector.mproj", "{6314C7BA-57A3-48BE-B742-5A432DE217BA}"
+Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "WorldBankConnector", "WorldBankConnector\WorldBankConnector.mproj", "{D33E778E-BBE3-49DA-8640-BCFF51EF7C6C}"
 EndProject
-Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "DatabricksRunsConnector", "DatabricksRunsConnector\DatabricksRunsConnector.mproj", "{A49C09E3-E71A-4A2B-8557-8A0730030B4B}"
+Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "DatabricksRunsConnector", "DatabricksRunsConnector\DatabricksRunsConnector.mproj", "{F472F566-E6B4-4117-AA46-E48B987CB0B3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EB6FBE51-8645-4B56-839B-09F776BCCA7B}"
 	ProjectSection(SolutionItems) = preProject
@@ -20,20 +20,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom Connectors", "Custom
 		Custom Connectors\WorldBankConnector.mez = Custom Connectors\WorldBankConnector.mez
 	EndProjectSection
 EndProject
+Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "AzureDataFactoryConnector", "AzureDataFactoryConnector\AzureDataFactoryConnector.mproj", "{B1ED9C48-F8FE-4788-A550-5286FD6BDDEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6314C7BA-57A3-48BE-B742-5A432DE217BA}.Debug|x86.ActiveCfg = Debug|x86
-		{6314C7BA-57A3-48BE-B742-5A432DE217BA}.Debug|x86.Build.0 = Debug|x86
-		{6314C7BA-57A3-48BE-B742-5A432DE217BA}.Release|x86.ActiveCfg = Release|x86
-		{6314C7BA-57A3-48BE-B742-5A432DE217BA}.Release|x86.Build.0 = Release|x86
-		{A49C09E3-E71A-4A2B-8557-8A0730030B4B}.Debug|x86.ActiveCfg = Debug|x86
-		{A49C09E3-E71A-4A2B-8557-8A0730030B4B}.Debug|x86.Build.0 = Debug|x86
-		{A49C09E3-E71A-4A2B-8557-8A0730030B4B}.Release|x86.ActiveCfg = Release|x86
-		{A49C09E3-E71A-4A2B-8557-8A0730030B4B}.Release|x86.Build.0 = Release|x86
+		{D33E778E-BBE3-49DA-8640-BCFF51EF7C6C}.Debug|x86.ActiveCfg = Debug|x86
+		{D33E778E-BBE3-49DA-8640-BCFF51EF7C6C}.Debug|x86.Build.0 = Debug|x86
+		{D33E778E-BBE3-49DA-8640-BCFF51EF7C6C}.Release|x86.ActiveCfg = Release|x86
+		{D33E778E-BBE3-49DA-8640-BCFF51EF7C6C}.Release|x86.Build.0 = Release|x86
+		{F472F566-E6B4-4117-AA46-E48B987CB0B3}.Debug|x86.ActiveCfg = Debug|x86
+		{F472F566-E6B4-4117-AA46-E48B987CB0B3}.Debug|x86.Build.0 = Debug|x86
+		{F472F566-E6B4-4117-AA46-E48B987CB0B3}.Release|x86.ActiveCfg = Release|x86
+		{F472F566-E6B4-4117-AA46-E48B987CB0B3}.Release|x86.Build.0 = Release|x86
+		{B1ED9C48-F8FE-4788-A550-5286FD6BDDEA}.Debug|x86.ActiveCfg = Debug|x86
+		{B1ED9C48-F8FE-4788-A550-5286FD6BDDEA}.Debug|x86.Build.0 = Debug|x86
+		{B1ED9C48-F8FE-4788-A550-5286FD6BDDEA}.Release|x86.ActiveCfg = Release|x86
+		{B1ED9C48-F8FE-4788-A550-5286FD6BDDEA}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
